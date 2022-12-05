@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+ 
+
+    <style>
+        body{
+                background-image: url('food_web/newimg.jpg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+        
+        input{
+            
+            border-color: rgb(108, 143, 199);
+            color: white;
+            background-color: rgb(44, 49, 52);
+            width: 90px;
+            height: 45px;
+            border: none;
+            border-radius: 0px;
+            margin: 2.5px;
+            font-size: medium;
+            font-style: initial;
+            
+        }
+        #clear{
+            width: 290px;
+            color: antiquewhite;
+            background-color: crimson;
+            border-radius: 0;
+            font-size:larger;
+        
+        }
+        
+        #answer{
+              width: 280px;
+              height: 50px;
+              background-color: bisque;
+              color :black;
+              border-style: ridge;
+              
+            }
+            #size{
+           height: 900px;
+           padding-bottom: 5px;
+           padding-top: 5px;
+        }
+        .formstyle
+        {   margin-top: 5cm;
+            margin-left: 11.5cm;
+            margin-right: 7cm;
+            overflow: hidden;
+            width: 330px;
+            height: 150px;
+            padding-top: 0.5cm;
+            padding-bottom: 6cm;
+            position: absolute;
+            border-style: groove;
+            background-color: rgba(5, 23, 23, 0.468);
+            text-align: center;
+        }
+       
+        
+    </style>
+</head>
+<body >
+    
+<div class="formstyle">
+
+        
+<form name="forms"  action="">
+
+<div id="size">
+<input type="text" placeholder="Answer"  name="answer" id="answer"> <br> 
+
+<input type="button" value=" 1 " onclick="forms.answer.value += '1' ">
+<input type="button" value=" 2 " onclick="forms.answer.value += '2' ">
+<input type="button" value=" 3 " onclick="forms.answer.value += '3' ">
+<br>
+
+<input type="button" value=" 4 " onclick="forms.answer.value += '4 ">
+<input type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+<input type="button" value=" 6 " onclick="forms.answer.value += '6' ">
+<br>
+
+<input type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+<input type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+<input type="button" value=" 9 " onclick="forms.answer.value += '9' ">
+<br>
+
+<input type="button" value=" + " onclick="forms.answer.value += '+' ">
+<input type="button" value=" - " onclick="forms.answer.value += '-' ">
+<input type="button" value=" * " onclick="forms.answer.value += '*' ">
+<br>
+
+<input type="button" value=" / " onclick="forms.answer.value += '/' ">
+<input type="button" value=" 0 " onclick="forms.answer.value += '0' ">
+<input type="button" value=" = " onclick="forms.answer.value = eval(forms.answer.value) ">
+<br>
+
+<input type="button" value="CLEAR" onclick="forms.answer.value = '' " id="clear">
+
+</div>
+
+
+
+
+
+</form>
+
+
+
+
+
+
+    </div>
+</body>
+</html>
